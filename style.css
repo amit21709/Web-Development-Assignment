@@ -1,0 +1,186 @@
+body{
+    font-family: sans-serif;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: disc;
+    text-decoration: none;
+}
+/* Header*/
+.head{
+    width:100vw;
+    height:60px;
+    background-color: wheat;
+    text-align: center;
+}
+/* Header Image */
+#img{
+    margin-top: 2vh;
+    float: left;
+    margin-left: 100px;   
+}
+.head div{
+ float: right;
+ margin-right: 10px;
+}
+/* head option */
+.headoption{
+    display:inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    background-color: blue;
+    margin-left: 10px;
+    border-radius: 20px;
+}
+.headoption i{
+    margin-top: 10px;
+    color: white;
+}
+
+/* Below Head(bhead) */
+.bhead{
+    width: 100%;
+    height:20px;
+    /* background-color: lightblue; */
+    margin-top: 23px;
+    margin-left: 5px;
+    text-align: center;
+    /* border-radius: 20px; */
+   
+}
+.bhead button{
+    background-color: blueviolet; /* Green */
+    border: none;
+    color: white;
+    margin-right: 30px;
+    padding: 13px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 17px;
+    float:right;
+    border-radius: 20px;
+
+}
+.bhead h2{
+    margin-top: 10px;
+    float: left;
+    margin-left: 40px;
+}
+/* after Bhead */
+.info{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: whitesmoke;
+  margin-top:100px;
+  height: 120px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 1px gray;
+}
+.info h3{
+    margin-top:10px;
+  margin-left:20px;
+}
+.info p{
+    margin-left:20px;
+}
+
+/* Main Content */
+.Mbdy{
+   width: 1170px;
+   margin:auto;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+ 
+}
+.mitem{
+    flex-basis: 50%;
+    margin: 10px 0px;
+    text-align: center;
+    padding: 30px 0px;
+    background: white;
+    box-shadow: 0px 0px 10px 3px gray;
+}
+#cont1{
+    height: 200px;
+}
+/* Side Bar */
+.sideBar{
+    position: fixed;
+    left:-200px;
+    width: 250px;
+    height:55%;
+    margin-top: 41px;
+    background: #042331;
+    border-radius: 20px;
+    transition: all .5s ease;
+    
+}
+.sideBar header{
+    font-size: 22px;
+    color: yellow;
+    text-align: center;
+    line-height: 70px;
+    background: #063146;
+    user-select: none;
+}
+.sideBar ul a{
+    display: block;
+    height: 100%;
+    width:100%;
+line-height: 65px;
+font-size: 14px;
+color: white;
+padding-left: 40px;
+box-sizing: border-box;
+border-top: 1px solid rgba(255, 255, 255, .4);
+transition: .4s;
+}
+ul li:hover a{
+    padding-left: 50px;
+}
+#check{
+    display:none
+}
+label #btn,label #cancel{
+    position: absolute;
+    cursor: pointer;
+    background: #042331;
+    border-radius:3px;
+}
+label #btn{
+    left: 0px;
+    top:60px;
+    font-size:28px;
+    color: white;
+    padding:6px 12px;
+    transition:all .5s;
+}
+label #cancel{
+    z-index: 1111;
+    left:-195px;
+    margin-top:33px;
+    font-size: 25px;
+    color:white;
+    padding:3px 9px;
+    margin-left: 18px;
+    
+    transition:all .5s ease;
+}
+#check:checked ~ .sideBar{
+    left:0;
+}
+#check:checked ~ label #btn{
+    left:150px;
+    opacity: 0;
+    pointer-events: none;
+}
+#check:checked ~ label #cancel{
+    left:195px;
+    top:70px;
+
+}
+
+
